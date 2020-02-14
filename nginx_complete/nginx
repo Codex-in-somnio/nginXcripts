@@ -1,0 +1,33 @@
+# bash completion for Debian nginx configuration tools
+
+_nginx_allcomp()
+{
+       command ls /etc/nginx/$1 2>/dev/null
+}
+
+_nginx_sites()
+{
+       COMPREPLY=( $( compgen -W '$( _nginx_allcomp $1 )' -- $cur  ) )
+}
+
+_ngensite()
+{
+       local cur
+
+       COMPREPLY=()
+       cur=${COMP_WORDS[COMP_CWORD]}
+
+       _nginx_sites sites-available
+}
+complete -F _ngensite ngensite
+
+_ngdissite()
+{
+       local cur
+
+       COMPREPLY=()
+       cur=${COMP_WORDS[COMP_CWORD]}
+
+       _nginx_sites sites-enabled
+}
+complete -F _ngdissite ngdissite
