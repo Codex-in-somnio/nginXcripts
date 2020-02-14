@@ -15,3 +15,11 @@ the scripts from anywhere.
 Feel free to use them and improve on them. If you do improve them, let me know!
 
 Thanks.
+
+
+Addition
+========
+
+Completion for `ngensite` and `ngdissite` are in `nginx_complete/nginx`.
+
+It may be placed under `/etc/bash_completion.d/`.
