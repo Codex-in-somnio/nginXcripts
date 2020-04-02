@@ -1,25 +1,12 @@
-Scripts
-=======
-
-A collection of really simple scripts that I've written and collected over the
-years. They are generally simplistic and simplifies some boring, repetitive tasks
-that I often do. So, please do not expect these to work straight out for you - 
-although I try to abstract them whenever I have the time, it's quite likely
-you'll need modify them to suit your needs.
-
-Tips
-----
-I usually throw my scripts into /usr/local/bin (Deb/Ubuntu) so that I can call 
-the scripts from anywhere.
-
-Feel free to use them and improve on them. If you do improve them, let me know!
-
-Thanks.
-
-
-Addition
+nginXcripts
 ========
 
-Completion for `ngensite` and `ngdissite` are in `nginx_complete/nginx`.
+Provide `a2ensite`-like scripts and completions.
 
-It may be placed under `/etc/bash_completion.d/`.
+## Usage
+
+Put `ngensite` and `ngdissite` into `/usr/local/bin` to call them anywhere.
+
+Completion for `ngensite` and `ngdissite` are in `nginx_complete/nginx`. It should be placed under `/etc/bash_completion.d/`.
+
+Run `quick-install.sh` to do the thing above.
